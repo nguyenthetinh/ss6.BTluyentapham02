@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemtra(mang,kytukiemtra) {
+        let num=0;
+        for (let i=0;i<mang.length;i++){
+            if (mang[i]==kytukiemtra){
+                num++;
+            }
+        }
+        if (num<1)return -1;
+        else return num;
+    }
+    let mang=[];
+    for (let i=0;i<6;i++) {
+        let kytumang = prompt("Nhap ki tu cua mang");
+        mang.push(kytumang);
+    }
+    let kytukiemtra=prompt("NHAP KY TU CAN KIEM TRA");
+    let ketqua=kiemtra(mang,kytukiemtra);
+    alert(ketqua);
+</script>
+</body>
+</html>

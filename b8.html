@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function ham(Array) {
+        let tem;
+        let num=Array.length;
+        for (let i=0;i<num/2;i++){
+            tem=Array[i];
+            Array[i]=Array[num-1];
+            Array[num-1]=tem;
+            num--;
+        }
+        return Array;
+    }
+    let mang=[];
+    for (let i=0;i<5;i++) {
+        let nhap = prompt("Nhập kí tự số");
+        mang.push(nhap);
+    }
+    let ketqua=ham(mang);
+    ketqua.toString()
+    document.write("mang so da dao : " +" "+ketqua);
+</script>
+</body>
+</html>

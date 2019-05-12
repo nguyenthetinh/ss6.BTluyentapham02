@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Tinh dien tich hinh tron</label><br><br>
+Nhap ban kinh: <input id="dt" placeholder="ban kinh" type="number" oninput="dientich(this.value)">
+<p> Ketqua= <span id="rs"></span></p>
+<label>Tinh chu vi hinh tron</label><br><br>
+Nhap ban kinh: <input id="cv" placeholder="ban kinh" type="number" oninput="chuvi(this.value)">
+<p>Ketqua= <span id="tt"></span></p>
+<script>
+let nhap=Number(document.getElementById("cv").value)
+function dientich(r) {
+    document.getElementById("rs").innerText=r*r*3.14;
+}
+function chuvi(x) {
+    document.getElementById("tt").innerHTML=x*2*3,14;
+}
+</script>
+</body>
+</html>

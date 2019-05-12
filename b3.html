@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Nhap so tinh giai thua</label>
+<input type="number" oninput="tinh(this.value)">
+<p>Ketqua= <span id="rs"></span></p>
+<script>
+    function tinh(x) {
+        kq=1;
+        for (let i=1;i<=x ; i++){
+            kq=kq*i
+        }
+        document.getElementById("rs").innerHTML=kq
+    }
+</script>
+
+</body>
+</html>
